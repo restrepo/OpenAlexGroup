@@ -1,7 +1,7 @@
 # OpenAlexGroup
 ## Backend
 O use la documentación del API, a continuación, desplegando el botón "GET" y despúes de hacer click sobre el botón "Try it out", introducir la identificación en la caja "`student_id`" y pulsar el botón "Execute":
-* [http://clustercien.udea.edu.co:8000/docs](http://clustercien.udea.edu.co:8000/docs)
+* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 # Fast API
 See install options and usage at: https://fastapi.tiangolo.com/
