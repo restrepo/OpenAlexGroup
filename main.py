@@ -33,10 +33,14 @@ def read_item(student_id: str = ""):
     #Real time JSON file
     r=requests.get(file)
     db=r.json()
+    new_db=[ d for d in db if d.get('student_id')==student_id  ]
+    f=open('data/filtered.json','w')
+    json.dump(new_db,f)
+    f.close()
     #with open(file) as json_file:
     #   db=json.load(json_file)
 
     if not student_id:
     	return db
     else:
-    	return [ d for d in db if d.get('student_id')==student_id  ]
+    	return new_db
