@@ -6,8 +6,11 @@ O use la documentación del API, a continuación, desplegando el botón "GET" y 
 # Fast API
 See install options and usage at: https://fastapi.tiangolo.com/
 ```
-$ uvicorn main:app --reload --host clustercien.udea.edu.co
+$ uvicorn main:app --reload --host
 ```
+and copy and paste the url in your browser, e.g
+
+http://127.0.0.1:8000/
 
 ## Frontend
 ```
