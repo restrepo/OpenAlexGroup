@@ -1,5 +1,9 @@
 "use strict";
 //See: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+var url_string = window.location.href
+var url = new URL(url_string);
+var student_id = url.searchParams.get("student_id");
+
 const output = document.querySelector(".output");
 //console.log(output); // <div class="output"></div>
 
@@ -44,7 +48,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.student_id} got Parcial 1: ${item.Parcial_1.value}`;
+        ${item.student_id} got Parcial 1: ${item.Parcial_1.value} for ${student_id}`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content

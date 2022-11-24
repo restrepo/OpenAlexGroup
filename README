@@ -13,3 +13,7 @@ $ uvicorn main:app --reload --host clustercien.udea.edu.co
 ```
 $ python3 -m http.server
 ```
+
+See:
+* https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript
+* https://stackoverflow.com/a/22790025/2268280
