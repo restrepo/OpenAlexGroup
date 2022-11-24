@@ -9,6 +9,7 @@ const output = document.querySelector(".output");
 // Storing json data in a variable
 //const localJsonFile = "local.json";
 const localJsonFile = "data/filtered.json";
+//const localJsonFile = "http://127.0.0.1:8000/?student_id=1001735333";
 
 
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed,
@@ -18,7 +19,13 @@ window.addEventListener("DOMContentLoaded", () => {
   output.textContent = "Loading....";
   // Make fetch request to local.json file
   fetch(localJsonFile)
-    .then((response) => response.json()) // and the response we get is in json format
+    .then((response) => 
+    {
+      if (!response.ok) {
+        throw new Error('Network response was not OK');
+      }
+      return response.json();
+    }) // and the response we get is in json format
     .then((data) => {
       // we call that data here
       // console.log(data); // check the data on the console
@@ -37,7 +44,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.student_id} got Parcial 1: ${item.Parcial_1}`;
+        ${item.student_id} got Parcial 1: ${item.Parcial_1.value}`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content
