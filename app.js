@@ -9,7 +9,7 @@ const output = document.querySelector(".output");
 // Storing json data in a variable
 //const localJsonFile = "local.json";
 const localJsonFile = "data/filtered.json";
-//const localJsonFile = "http://127.0.0.1:8000/?student_id=1001735333";
+//const localJsonFile = "http://127.0.0.1:8000?student_id=1001735333";
 
 
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed,
