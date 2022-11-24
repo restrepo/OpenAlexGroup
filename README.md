@@ -20,7 +20,7 @@ http://127.0.0.1:8000/?student_id=1001735333
 
 ## Frontend
 ```
-$ python3 -m http.server
+$ python3 -m http.server 8001
 ```
 
 See:
