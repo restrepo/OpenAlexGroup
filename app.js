@@ -1,5 +1,5 @@
 "use strict";
-
+//See: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 const output = document.querySelector(".output");
 //console.log(output); // <div class="output"></div>
 
