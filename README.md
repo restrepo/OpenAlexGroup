@@ -8,9 +8,15 @@ See install options and usage at: https://fastapi.tiangolo.com/
 ```
 $ uvicorn main:app --reload --host
 ```
-and copy and paste the url in your browser, e.g
+and copy and paste the url in your browser, e.g:
 
 http://127.0.0.1:8000/
+
+You can now filter with the JSON keys into the url, e.g:
+
+http://127.0.0.1:8000/?student_id=1001735333
+
+
 
 ## Frontend
 ```
