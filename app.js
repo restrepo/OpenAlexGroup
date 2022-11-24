@@ -1,9 +1,16 @@
 "use strict";
 //See: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+//get user input from url: http://127.0.0.1:8001/?student_id=1001735333
 var url_string = window.location.href
 var url = new URL(url_string);
 var student_id = url.searchParams.get("student_id");
-
+//
+function Get(yourUrl){
+  var Httpreq = new XMLHttpRequest(); // a new request
+  Httpreq.open("GET",yourUrl,false);
+  Httpreq.send(null);
+  return Httpreq.responseText;          
+}
 const output = document.querySelector(".output");
 //console.log(output); // <div class="output"></div>
 
@@ -13,7 +20,8 @@ const output = document.querySelector(".output");
 // Storing json data in a variable
 //const localJsonFile = "local.json";
 const localJsonFile = "data/filtered.json";
-//const localJsonFile = "http://127.0.0.1:8000?student_id=1001735333";
+const APIurl = "http://127.0.0.1:8000?student_id="+student_id;
+//var json_obj = JSON.parse(Get(APIurl));
 
 
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed,
@@ -48,7 +56,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.student_id} got Parcial 1: ${item.Parcial_1.value} for ${student_id}`;
+        ${item.student_id} got Parcial 1: ${item.Parcial_1.value} from ${APIurl}`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content

@@ -15,5 +15,6 @@ $ python3 -m http.server
 ```
 
 See:
+* https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
 * https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript
 * https://stackoverflow.com/a/22790025/2268280
