@@ -1,6 +1,6 @@
 '''
 $ sudo pip3 install fastapi
-$ pip install uvicorn[standard]
+$ pip3 install uvicorn[standard]
 $ uvicorn main:app --reload
 '''
 from typing import Optional
