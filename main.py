@@ -28,7 +28,11 @@ file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/data/calific
 @app.get("/")
 def read_item(student_id: str = ""):
     '''
-    http://clustercien.udea.edu.co:8000/?student_id=1113674432
+    You can write the API documentation here:
+    
+    For example: 
+    
+    USAGE: http://127.0.0.1:8000/?student_id=1113674432
     '''
     #Real time JSON file
     r=requests.get(file)
