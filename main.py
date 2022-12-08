@@ -30,7 +30,7 @@ file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/static/data/
 #]
 
 @app.get("/")
-def read_item(student_id: str = ""):
+def read_item(student_id: str = "", output: str = "html"):
     '''
     You can write the API documentation here:
     
@@ -47,10 +47,12 @@ def read_item(student_id: str = ""):
     	json.dump(db,f)
     else:
     	json.dump(new_db,f)
-
-
     f.close()
-    #with open(file) as json_file:
-    #   db=json.load(json_file)
 
-    return FileResponse('index.html')
+    if output == 'json':
+        if not student_id:
+    	    return db
+        else:
+    	    return new_db
+    else:
+        return FileResponse('index.html')

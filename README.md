@@ -1,8 +1,4 @@
 # OpenAlexGroup
-## Backend
-O use la documentación del API, a continuación, desplegando el botón "GET" y despúes de hacer click sobre el botón "Try it out", introducir la identificación en la caja "`student_id`" y pulsar el botón "Execute":
-* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
 # Fast API
 See install options and usage at: https://fastapi.tiangolo.com/
 ```
@@ -16,9 +12,18 @@ You can now filter with the JSON keys into the url, e.g:
 
 http://127.0.0.1:8000/?student_id=1001735333
 
+To obtain the JSON output use:
 
+http://127.0.0.1:8000/?student_id=1001735333&output=json
+
+
+## Backend
+Use the API documentation at 
+* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+Click the "GET" button and click again the "Try it out" button. Then gives the identification on the "`student_id`" box, and fill `json` in the output box. Finally clicj the "Execute" button.
 
 ## Frontend
+The static frontend reading the last `static/data/filtered.json` file can also be obtained with
 ```
 $ python3 -m http.server 8001
 ```
