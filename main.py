@@ -17,7 +17,7 @@ import json
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static") ###
 
-file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/data/calificaciones.json'
+file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/static/data/calificaciones.json'
 
 #JSON SCHEME
 #[{"student_id": str,
