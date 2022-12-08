@@ -6,12 +6,16 @@ $ uvicorn main:app --reload
 from typing import Optional
 
 from fastapi import FastAPI
+from starlette.responses import FileResponse ###
+from starlette.staticfiles import StaticFiles ###
+
 
 import requests
 
 import json
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static") ###
 
 file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/data/calificaciones.json'
 
@@ -38,13 +42,15 @@ def read_item(student_id: str = ""):
     r=requests.get(file)
     db=r.json()
     new_db=[ d for d in db if d.get('student_id')==student_id  ]
-    f=open('data/filtered.json','w')
-    json.dump(new_db,f)
+    f=open('static/data/filtered.json','w')
+    if not student_id:
+    	json.dump(db,f)
+    else:
+    	json.dump(new_db,f)
+
+
     f.close()
     #with open(file) as json_file:
     #   db=json.load(json_file)
 
-    if not student_id:
-    	return db
-    else:
-    	return new_db
+    return FileResponse('index.html')

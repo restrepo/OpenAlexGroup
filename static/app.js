@@ -19,7 +19,7 @@ const output = document.querySelector(".output");
 
 // Storing json data in a variable
 //const localJsonFile = "local.json";
-const localJsonFile = "data/filtered.json";
+const localJsonFile = "static/data/filtered.json";
 const APIurl = "http://127.0.0.1:8000?student_id="+student_id;
 //var json_obj = JSON.parse(Get(APIurl));
 
