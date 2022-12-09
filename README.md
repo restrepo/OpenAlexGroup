@@ -2,7 +2,7 @@
 # Fast API
 See install options and usage at: https://fastapi.tiangolo.com/
 ```
-$ uvicorn main:app --reload --host
+$ uvicorn main:app --reload
 ```
 and copy and paste the url in your browser, e.g:
 
