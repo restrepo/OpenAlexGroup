@@ -4,6 +4,11 @@ See install options and usage at: https://fastapi.tiangolo.com/
 ```
 $ uvicorn main:app --reload
 ```
+or
+```
+$ uvicorn main:app --reload --host host.name.com
+```
+
 and copy and paste the url in your browser, e.g:
 
 http://127.0.0.1:8000/
