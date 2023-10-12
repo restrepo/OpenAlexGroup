@@ -1,0 +1,285 @@
+display_name,normalized+name,parent_display_names
+Economic history,economic+history,"Economics, History"
+Pedagogy,pedagogy,"Psychology, Sociology"
+Economic geography,economic+geography,"Economics, Geography"
+Geometry,geometry,Mathematics
+Quantum electrodynamics,quantum+electrodynamics,Physics
+Nuclear magnetic resonance,nuclear+magnetic+resonance,Physics
+Engineering physics,engineering+physics,"Engineering, Physics"
+Linguistics,linguistics,Philosophy
+Development economics,development+economics,Economics
+Polymer science,polymer+science,"Chemistry, Materials science"
+Gerontology,gerontology,Medicine
+Seismology,seismology,Geology
+Construction engineering,construction+engineering,Engineering
+Statistical physics,statistical+physics,Physics
+Neuroscience,neuroscience,"Biology, Psychology"
+Internal medicine,internal+medicine,Medicine
+Process management,process+management,"Business, Engineering"
+Family medicine,family+medicine,Medicine
+Computational chemistry,computational+chemistry,Chemistry
+Cardiology,cardiology,Medicine
+Archaeology,archaeology,"Geography, History"
+Automotive engineering,automotive+engineering,Engineering
+Anthropology,anthropology,Sociology
+Media studies,media+studies,Sociology
+Orthodontics,orthodontics,Medicine
+Theoretical physics,theoretical+physics,Physics
+Genetics,genetics,Biology
+Criminology,criminology,"Psychology, Sociology"
+Mechanical engineering,mechanical+engineering,Engineering
+Risk analysis (engineering),risk+analysis,"Business, Medicine"
+Actuarial science,actuarial+science,"Business, Economics"
+Algorithm,algorithm,"Computer science, Mathematics"
+Biophysics,biophysics,Biology
+Industrial engineering,industrial+engineering,Engineering
+Theology,theology,Philosophy
+Gynecology,gynecology,Medicine
+Molecular physics,molecular+physics,"Chemistry, Physics"
+Electronic engineering,electronic+engineering,Engineering
+Anesthesia,anesthesia,Medicine
+Chromatography,chromatography,Chemistry
+Multimedia,multimedia,Computer science
+Database,database,Computer science
+General surgery,general+surgery,Medicine
+Radiology,radiology,Medicine
+Economic policy,economic+policy,"Business, Economics"
+Internet privacy,internet+privacy,Computer science
+Advertising,advertising,Business
+Ancient history,ancient+history,History
+Natural language processing,natural+language+processing,Computer science
+Data science,data+science,Computer science
+Embedded system,embedded+system,"Computer science, Engineering"
+Artificial intelligence,artificial+intelligence,Computer science
+Thermodynamics,thermodynamics,Physics
+Nuclear physics,nuclear+physics,Physics
+Pediatrics,pediatrics,Medicine
+Environmental resource management,environmental+resource+management,"Economics, Environmental science"
+Water resource management,water+resource+management,Environmental science
+Developmental psychology,developmental+psychology,Psychology
+Macroeconomics,macroeconomics,Economics
+Mineralogy,mineralogy,"Chemistry, Geology"
+Fishery,fishery,Biology
+Monetary economics,monetary+economics,Economics
+Clinical psychology,clinical+psychology,"Medicine, Psychology"
+Computational biology,computational+biology,Biology
+Evolutionary biology,evolutionary+biology,Biology
+Real-time computing,real+time+computing,Computer science
+Anatomy,anatomy,"Biology, Medicine"
+Statistics,statistics,Mathematics
+Distributed computing,distributed+computing,Computer science
+Optics,optics,Physics
+Radiochemistry,radiochemistry,Chemistry
+Intensive care medicine,intensive+care+medicine,Medicine
+Audiology,audiology,Medicine
+Climatology,climatology,Geology
+Geomorphology,geomorphology,Geology
+Physical chemistry,physical+chemistry,Chemistry
+Classical economics,classical+economics,Economics
+Microeconomics,microeconomics,Economics
+Organic chemistry,organic+chemistry,Chemistry
+Cognitive science,cognitive+science,Psychology
+Nuclear medicine,nuclear+medicine,Medicine
+Computer hardware,computer+hardware,Computer science
+Atmospheric sciences,atmospheric+sciences,"Geology, Physics"
+Software engineering,software+engineering,"Computer science, Engineering"
+Endocrinology,endocrinology,"Biology, Medicine"
+Emergency medicine,emergency+medicine,Medicine
+Engineering drawing,engineering+drawing,Engineering
+Petrology,petrology,Geology
+Operations management,operations+management,"Economics, Engineering"
+Transport engineering,transport+engineering,Engineering
+Food science,food+science,"Biology, Chemistry"
+Toxicology,toxicology,Biology
+Classics,classics,"Art, History"
+Arithmetic,arithmetic,Mathematics
+Optometry,optometry,Medicine
+Control engineering,control+engineering,Engineering
+Mathematical economics,mathematical+economics,"Economics, Mathematics"
+Architectural engineering,architectural+engineering,Engineering
+Geophysics,geophysics,"Geology, Physics"
+Religious studies,religious+studies,Philosophy
+Communication,communication,"Psychology, Sociology"
+Optoelectronics,optoelectronics,"Materials science, Physics"
+Environmental engineering,environmental+engineering,"Engineering, Environmental science"
+Agricultural engineering,agricultural+engineering,Engineering
+Epistemology,epistemology,Philosophy
+Cell biology,cell+biology,Biology
+Labour economics,labour+economics,Economics
+Cognitive psychology,cognitive+psychology,Psychology
+Geodesy,geodesy,"Geography, Geology"
+Ecology,ecology,Biology
+Acoustics,acoustics,Physics
+Remote sensing,remote+sensing,"Geography, Geology"
+Psychiatry,psychiatry,"Medicine, Psychology"
+Mathematical optimization,mathematical+optimization,Mathematics
+Obstetrics,obstetrics,Medicine
+Meteorology,meteorology,"Geography, Physics"
+Astrobiology,astrobiology,"Biology, Physics"
+Horticulture,horticulture,Biology
+Environmental protection,environmental+protection,"Environmental science, Geography"
+Traditional medicine,traditional+medicine,Medicine
+Agronomy,agronomy,Biology
+Humanities,humanities,"Art, Philosophy"
+Structural engineering,structural+engineering,Engineering
+Theoretical computer science,theoretical+computer+science,Computer science
+Zoology,zoology,Biology
+Nuclear engineering,nuclear+engineering,Engineering
+Computer architecture,computer+architecture,Computer science
+Computer graphics (images),computer+graphics+images,Computer science
+Biomedical engineering,biomedical+engineering,"Engineering, Medicine"
+Natural resource economics,natural+resource+economics,Economics
+Pulp and paper industry,pulp+and+paper+industry,Engineering
+Psychotherapist,psychotherapist,Psychology
+Astronomy,astronomy,Physics
+Ethnology,ethnology,"History, Sociology"
+Social science,social+science,Sociology
+Socioeconomics,socioeconomics,"Economics, Sociology"
+Applied psychology,applied+psychology,Psychology
+Political economy,political+economy,"Economics, Sociology"
+Civil engineering,civil+engineering,Engineering
+Management science,management+science,"Economics, Engineering"
+Physical therapy,physical+therapy,Medicine
+Computational physics,computational+physics,Physics
+Economic growth,economic+growth,Economics
+Agroforestry,agroforestry,"Biology, Environmental science"
+Financial system,financial+system,"Business, Economics"
+Engineering management,engineering+management,Engineering
+Neoclassical economics,neoclassical+economics,Economics
+Nursing,nursing,Medicine
+Chemical physics,chemical+physics,"Chemistry, Physics"
+Law and economics,law+and+economics,"Economics, Sociology"
+Law,law,Political science
+Crystallography,crystallography,Chemistry
+Forensic engineering,forensic+engineering,Engineering
+Economy,economy,Economics
+Visual arts,visual+arts,Art
+Soil science,soil+science,"Environmental science, Geology"
+Library science,library+science,Computer science
+Marketing,marketing,Business
+Keynesian economics,keynesian+economics,Economics
+Inorganic chemistry,inorganic+chemistry,Chemistry
+Polymer chemistry,polymer+chemistry,"Chemistry, Materials science"
+Forestry,forestry,Geography
+Physical geography,physical+geography,Geography
+Ophthalmology,ophthalmology,Medicine
+Regional science,regional+science,"Geography, Sociology"
+Paleontology,paleontology,"Biology, Geology"
+Industrial organization,industrial+organization,"Business, Economics"
+Demographic economics,demographic+economics,Economics
+Mining engineering,mining+engineering,"Engineering, Geology"
+Combinatorial chemistry,combinatorial+chemistry,Chemistry
+Simulation,simulation,"Computer science, Engineering"
+Agricultural economics,agricultural+economics,Economics
+Telecommunications,telecommunications,"Computer science, Engineering"
+Operating system,operating+system,Computer science
+Discrete mathematics,discrete+mathematics,Mathematics
+World Wide Web,world+wide+web,Computer science
+Mathematics education,mathematics+education,"Mathematics, Psychology"
+Biotechnology,biotechnology,Biology
+Parallel computing,parallel+computing,Computer science
+Business administration,business+administration,Business
+Atomic physics,atomic+physics,Physics
+Management,management,Economics
+Systems engineering,systems+engineering,Engineering
+Waste management,waste+management,Engineering
+Finance,finance,"Business, Economics"
+Cartography,cartography,Geography
+Computational science,computational+science,"Computer science, Mathematics"
+Economic system,economic+system,Economics
+Gender studies,gender+studies,Sociology
+Manufacturing engineering,manufacturing+engineering,Engineering
+Dermatology,dermatology,Medicine
+Information retrieval,information+retrieval,Computer science
+Computer security,computer+security,Computer science
+Biochemistry,biochemistry,"Biology, Chemistry"
+Knowledge management,knowledge+management,Computer science
+Mechanics,mechanics,Physics
+Pure mathematics,pure+mathematics,Mathematics
+Cancer research,cancer+research,"Biology, Medicine"
+Pharmacology,pharmacology,"Biology, Medicine"
+Financial economics,financial+economics,Economics
+Animal science,animal+science,Biology
+Psychoanalysis,psychoanalysis,Psychology
+Nuclear chemistry,nuclear+chemistry,Chemistry
+International economics,international+economics,Economics
+Computer vision,computer+vision,Computer science
+Botany,botany,Biology
+Quantum mechanics,quantum+mechanics,Physics
+Physical medicine and rehabilitation,physical+medicine+and+rehabilitation,Medicine
+Data mining,data+mining,Computer science
+Econometrics,econometrics,"Economics, Mathematics"
+Composite material,composite+material,Materials science
+Welfare economics,welfare+economics,Economics
+Andrology,andrology,Medicine
+Speech recognition,speech+recognition,Computer science
+Agricultural science,agricultural+science,"Biology, Environmental science"
+Operations research,operations+research,"Engineering, Mathematics"
+Genealogy,genealogy,History
+Gastroenterology,gastroenterology,Medicine
+Accounting,accounting,"Business, Economics"
+Literature,literature,Art
+Nanotechnology,nanotechnology,Materials science
+Marine engineering,marine+engineering,Engineering
+Reliability engineering,reliability+engineering,Engineering
+Mathematical physics,mathematical+physics,"Mathematics, Physics"
+Stereochemistry,stereochemistry,Chemistry
+Classical mechanics,classical+mechanics,Physics
+Computer engineering,computer+engineering,"Computer science, Engineering"
+Programming language,programming+language,Computer science
+Public administration,public+administration,Political science
+Veterinary medicine,veterinary+medicine,Medicine
+Astrophysics,astrophysics,Physics
+Microbiology,microbiology,Biology
+Public economics,public+economics,Economics
+Human‚Äìcomputer interaction,human+computer+interaction,Computer science
+Medicinal chemistry,medicinal+chemistry,Chemistry
+Metallurgy,metallurgy,Materials science
+Medical education,medical+education,Medicine
+Medical physics,medical+physics,"Medicine, Physics"
+Computer network,computer+network,Computer science
+Market economy,market+economy,Economics
+Public relations,public+relations,Political science
+Physiology,physiology,"Biology, Medicine"
+Engineering ethics,engineering+ethics,Engineering
+Petroleum engineering,petroleum+engineering,"Engineering, Geology"
+Positive economics,positive+economics,Economics
+Surgery,surgery,Medicine
+Demography,demography,Sociology
+Aeronautics,aeronautics,Engineering
+Dentistry,dentistry,Medicine
+Machine learning,machine+learning,Computer science
+Chemical engineering,chemical+engineering,Engineering
+Bioinformatics,bioinformatics,Biology
+Social psychology,social+psychology,Psychology
+Environmental health,environmental+health,Medicine
+Medical emergency,medical+emergency,Medicine
+Process engineering,process+engineering,Engineering
+Condensed matter physics,condensed+matter+physics,Physics
+Photochemistry,photochemistry,Chemistry
+Aesthetics,aesthetics,"Art, Philosophy"
+Oceanography,oceanography,Geology
+Urology,urology,Medicine
+Pathology,pathology,Medicine
+International trade,international+trade,"Business, Economics"
+Biological system,biological+system,Biology
+Geotechnical engineering,geotechnical+engineering,"Engineering, Geology"
+Immunology,immunology,"Biology, Medicine"
+Applied mathematics,applied+mathematics,Mathematics
+Environmental ethics,environmental+ethics,Philosophy
+Combinatorics,combinatorics,Mathematics
+Electrical engineering,electrical+engineering,Engineering
+Mathematical analysis,mathematical+analysis,Mathematics
+Environmental economics,environmental+economics,Economics
+Oncology,oncology,Medicine
+Virology,virology,"Biology, Medicine"
+Earth science,earth+science,Geology
+Geochemistry,geochemistry,Geology
+Art history,art+history,"Art, History"
+Commerce,commerce,"Business, Economics"
+Environmental planning,environmental+planning,"Environmental science, Geography"
+Environmental chemistry,environmental+chemistry,Chemistry
+Particle physics,particle+physics,Physics
+Aerospace engineering,aerospace+engineering,Engineering
+Molecular biology,molecular+biology,Biology
+Biochemical engineering,biochemical+engineering,Engineering

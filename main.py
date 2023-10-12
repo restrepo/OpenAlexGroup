@@ -26,12 +26,16 @@ def read_item(concept: str = "", output: str = "html"):
     
     For example: 
     
-    USAGE: http://127.0.0.1:8000/?concept=1113674432
+    USAGE: http://127.0.0.1:8000/?concept=particle+physics
     '''
     #Real time JSON file:
     concept_id=''
     if concept:
-        concetp_id='concept.id:C109214941,'
+        print('va 1')
+        concept_id='concept.id:C109214941,'
+    else:
+        print('va 2')
+        
     file=f'https://api.openalex.org/sources?filter={concept_id}apc_usd:0'
     
     r=requests.get(file)
@@ -47,18 +51,13 @@ def read_item(concept: str = "", output: str = "html"):
          } for d in rr[:maxj]
     ]
     print('*',concept,'*',db)
-    new_db=[ d for d in db if d.get('concept')==concept  ]
     f=open('static/data/filtered.json','w')
-    if not concept:
-        json.dump(db,f)
-    else:
-        json.dump(new_db,f)
+    json.dump(db,f)
     f.close()
 
     if output == 'json':
-        if not concept:
-            return db
-        else:
-            return new_db
+        # http://127.0.0.1:8000/?concept=particle+physics&output=json
+        return db
     else:
+        # http://127.0.0.1:8000/?concept=particle+physics
         return FileResponse('index.html')
