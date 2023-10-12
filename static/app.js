@@ -3,7 +3,7 @@
 //get user input from url: http://127.0.0.1:8001/?student_id=1001735333
 var url_string = window.location.href
 var url = new URL(url_string);
-var student_id = url.searchParams.get("student_id");
+//var student_id = url.searchParams.get("student_id");
 //
 function Get(yourUrl){
   var Httpreq = new XMLHttpRequest(); // a new request

@@ -17,28 +17,23 @@ import json
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static") ###
 
-file='https://api.openalex.org/sources?filter=concept.id:C109214941,apc_usd:0'
 
-#JSON SCHEME
-#[{"student_id": str,
-# "Evaluation 1":{"value": int,
-#                 "%": int,
-#                 "Description": str
-#                 },
-# ...
-# }
-#]
 
 @app.get("/")
-def read_item(student_id: str = "", output: str = "html"):
+def read_item(concept: str = "", output: str = "html"):
     '''
     You can write the API documentation here:
     
     For example: 
     
-    USAGE: http://127.0.0.1:8000/?student_id=1113674432
+    USAGE: http://127.0.0.1:8000/?concept=1113674432
     '''
-    #Real time JSON file
+    #Real time JSON file:
+    concept_id=''
+    if concept:
+        concetp_id='concept.id:C109214941,'
+    file=f'https://api.openalex.org/sources?filter={concept_id}apc_usd:0'
+    
     r=requests.get(file)
     rr=r.json().get('results')
     maxj=100
@@ -51,17 +46,17 @@ def read_item(student_id: str = "", output: str = "html"):
           'h_index'   : d.get('summary_stats').get('h_index')
          } for d in rr[:maxj]
     ]
-    print('***',db)
-    new_db=[ d for d in db if d.get('student_id')==student_id  ]
+    print('*',concept,'*',db)
+    new_db=[ d for d in db if d.get('concept')==concept  ]
     f=open('static/data/filtered.json','w')
-    if not student_id:
+    if not concept:
         json.dump(db,f)
     else:
         json.dump(new_db,f)
     f.close()
 
     if output == 'json':
-        if not student_id:
+        if not concept:
             return db
         else:
             return new_db
