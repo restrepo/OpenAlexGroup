@@ -10,8 +10,18 @@
 
 <body>
   <div>
-    <h1>[ Displaying Content On The Webpage From Local JSON File ]</h1>
+    <h1>[ Search for <a href="https://en.wikipedia.org/wiki/Diamond_open_access">Diamond open access</a> journals for level 1 OpenAlex Concepts]</h1>
   </div>
+  
+        
+<hr />             
+<div>
+     <p> <b>USAGE:<b> Add to this URL: <code>/?concept=normalized+concept</code> or <code>/?concept=normalized+concept&output=json</code> by copy and paste the level 1 normalized+concept from the corresponding column in <a href="https://github.com/restrepo/OpenAlexGroup/blob/diamond/static/data/level_1_concepts.csv" target="_blank" rel="noopener noreferrer">this table</a>   </p>
+
+             <p> <b>EXAMPLE:</b> for URL <code>http://example.com</code> change to <code>http://example.com/?concept=particle+physics</code> </p>
+         <p> Only the fist 25 journals are shown </p>
+</div>
+    
   <hr />
   <div class="output"></div>
   <script src="static/app.js"></script>

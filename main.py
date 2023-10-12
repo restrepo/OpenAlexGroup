@@ -31,10 +31,11 @@ def read_item(concept: str = "", output: str = "html"):
     #Real time JSON file:
     concept_id=''
     if concept:
-        print('va 1')
-        concept_id='concept.id:C109214941,'
-    else:
-        print('va 2')
+        c=requests.get(f'https://api.openalex.org/concepts?filter=display_name.search:{concept}')
+        c=c.json().get('results')[0].get('id')
+        
+        concept_id=f"concept.id:{c.split('/')[-1]},"
+ 
         
     file=f'https://api.openalex.org/sources?filter={concept_id}apc_usd:0'
     
