@@ -56,7 +56,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.student_id} got Parcial 1: ${item.Parcial_1.value} from ${APIurl}`;
+        ${item.id} got Parcial 1: ${item.issn_l} from ${APIurl}`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content

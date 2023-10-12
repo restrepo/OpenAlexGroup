@@ -17,7 +17,7 @@ import json
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static") ###
 
-file='https://raw.githubusercontent.com/restrepo/OpenAlexGroup/main/static/data/calificaciones.json'
+file='https://api.openalex.org/sources?filter=concept.id:C109214941,apc_usd:0'
 
 #JSON SCHEME
 #[{"student_id": str,
@@ -40,7 +40,9 @@ def read_item(student_id: str = "", output: str = "html"):
     '''
     #Real time JSON file
     r=requests.get(file)
-    db=r.json()
+    rr=r.json().get('results')
+    db=[{'id': 'https://openalex.org/S173952182', 'issn_l': '0370-2693'},{'id': 'https://openalex.org/S173952182', 'issn_l': '0370-2693'}]
+    print('***',db)
     new_db=[ d for d in db if d.get('student_id')==student_id  ]
     f=open('static/data/filtered.json','w')
     if not student_id:
