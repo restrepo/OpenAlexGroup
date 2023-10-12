@@ -20,8 +20,6 @@ const output = document.querySelector(".output");
 // Storing json data in a variable
 //const localJsonFile = "local.json";
 const localJsonFile = "static/data/filtered.json";
-const APIurl = "http://127.0.0.1:8000?student_id="+student_id;
-//var json_obj = JSON.parse(Get(APIurl));
 
 
 // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed,
@@ -56,7 +54,7 @@ function jsonList(item) {
   const div = document.createElement("div");
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
-        ${item.id} got Parcial 1: ${item.issn_l} from ${APIurl}`;
+       Journal: ${item.journal}, Publisher: ${item.publisher}, Articles: ${item.articles}, Citations ${item.citations},  h-index ${item.h_index},`;
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content

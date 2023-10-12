@@ -24,7 +24,7 @@ file='https://api.openalex.org/sources?filter=concept.id:C109214941,apc_usd:0'
 # "Evaluation 1":{"value": int,
 #                 "%": int,
 #                 "Description": str
-#                 }, 
+#                 },
 # ...
 # }
 #]
@@ -41,20 +41,29 @@ def read_item(student_id: str = "", output: str = "html"):
     #Real time JSON file
     r=requests.get(file)
     rr=r.json().get('results')
-    db=[{'id': 'https://openalex.org/S173952182', 'issn_l': '0370-2693'},{'id': 'https://openalex.org/S173952182', 'issn_l': '0370-2693'}]
+    maxj=100
+    db=[
+        { 
+          'journal'   : d.get('display_name'),
+          'publisher' : d.get('host_organization_name'),
+          'articles'  : f"{d.get('works_count'):,}",
+          'citations' : f"{d.get('cited_by_count'):,}",
+          'h_index'   : d.get('summary_stats').get('h_index')
+         } for d in rr[:maxj]
+    ]
     print('***',db)
     new_db=[ d for d in db if d.get('student_id')==student_id  ]
     f=open('static/data/filtered.json','w')
     if not student_id:
-    	json.dump(db,f)
+        json.dump(db,f)
     else:
-    	json.dump(new_db,f)
+        json.dump(new_db,f)
     f.close()
 
     if output == 'json':
         if not student_id:
-    	    return db
+            return db
         else:
-    	    return new_db
+            return new_db
     else:
         return FileResponse('index.html')
